@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
+router.get('/home', (req, res, next) => {
   res.render('home', { title: 'Home' });
 });
 
@@ -26,9 +26,15 @@ router.get('/favourite-things', (req, res, next) => {
   res.render('index', { title: 'Favourite Things' });
 });
 
+router.get('/MyProjectList/:id', (req, res, next) => {
+ // res.send('| Sidharth Wants id : ' + req.params.id)
+ var id = req.params.id;
+  res.render( 'myProjList', { title: id });
+});
+
 router.get('/MyProjectList', (req, res, next) => {
   
-  res.render('myProjList', { title: 'My Projects' });
-});
+   res.render( 'myProjList', { title: "My Projects" });
+ });
 
 module.exports = router;

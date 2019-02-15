@@ -1,60 +1,84 @@
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    
 <% include ./partials/header.ejs %>
+
+<head>
+<style>
+.top-left {
+  position: relative;
+  align:center;
+  top: 2px;
+  left: -10px;
+  font-size:30px; 
+  font-family:Billabong;
+}
+.middle {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+  font-size:30px; 
+  font-family:Billabong;
+  
+}
+img {
+  border-radius: 20px;
+}
+ul#menu li {
+  display:inline;
+}
+</style>
+</head>
+
+
 <div class="container" style="width:100%">
      <h1 class="display-4" style="color: #CEF0D4; font-family: 'courier', cursive; font-size: 60px; font-weight: normal; line-height: 48px;margin-top:10px; margin: 10 10 0px; text-align: left; text-shadow: 1px 1px 2px black;"><strong> Services Offered by Sidharth</strong></h1>
       <br>
       
-      <table class="table table-bordered table-striped table-hover">
-         <tr>
-         <td>Web Development</td>
-         <td><img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Trans-logo-sc-2.png" 
-                alt="no img found"
-                height="60px"
-                style="border:5px solid black; margin-left:15%"
-                ALIGN="center"
-                width="60px" 
-             />
-             </td>
+<ul style="list-style-type:none; display:inline;">
+  <li>
+  <div style="float:right; margin-right:20px">
+  <img src="assests/images/programming-general.jpeg" style="height:200px; width:300px"/>
+  <div class="top-left" style="left:20px">
+  General Programming
+  </div>
+</div>
+</li>
 
-         </tr>
-          <td>API Development</td>
-          <td>
-          <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Trans-logo-sc-2.png" 
-                alt="no img found"
-                height="60px"
-                style="border:5px solid black; margin-left:15%"
-                ALIGN="center"
-                width="60px" 
-             />
-             </td>  
-         <tr>
+ <li>
+  <div>
+  <img src="assests/images/android-icon.png" style="height:200px; width:200px;"/>
+  <div class="top-left">
+  Mobile Applications
+  </div>
+</div>
+</li>
 
-         <td>General Programming</td>
-         <td>
-         <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Trans-logo-sc-2.png" 
-                alt="no img found"
-                height="60px"
-                style="border:5px solid black; margin-left:15%"
-                ALIGN="center"
-                width="60px" 
-             />
-             </td>
-         </tr>
+ <li>
+  <div style=" float:right; margin-right:-40px">
+  <img src="assests/images/api.png" style="height:200px; width:400px"/>
+  <div class="top-left" style="left:90px">
+  API Development
+  </div>
+</div>
+</li>
 
-         <tr>
-         <td>Mobile Application</td>
-         <td>
-         <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/68/Trans-logo-sc-2.png" 
-                alt="no img found"
-                height="60px"
-                style="border:5px solid black; margin-left:15%"
-                ALIGN="center"
-                width="60px" 
-             />
-             </td>
-         </tr>
-      </table>
+ <li>
+  <div >
+  <img src="assests/images/web-services-.png" style="height:200px; width:200px"/>
+  <div class="top-left">
+  Web Development
+</div>
+</div>
+</li>
+</ul>
+
+<div class="middle">
+  <img src="assests/images/Game-programmer.png" style="height:500px;
+  width:400px;" />
+  </div>
       <% include ./partials/footer.ejs %>
+
+      

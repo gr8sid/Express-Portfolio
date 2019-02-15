@@ -2,7 +2,37 @@
 <html lang="en">
 
 <head>
+<style>
 
+.glow {
+  font-size: 40px;
+   color: #CEF0D4; 
+   font-size: 40px; 
+   font-weight: normal; 
+   line-height: 48px;
+   margin-top:10px; 
+   top:10px;
+   left:20px
+   text-shadow: 1px 1px 2px black;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+ font-family: 'Billabong'
+}
+
+@-webkit-keyframes glow {
+ 
+
+  from {
+    text-shadow: 0 0 10px #FF9900, 0 0 20px #fff, 0 0 30px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 50px #FF9900, 0 0 50px #FF9900;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #FF9900, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #FF9900, 0 0 60px #FF9900, 0 0 60px #FF9900, 0 0 50px #FF9900;
+  }
+}
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +43,6 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="Content/app.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style type = "text/css">
 a:hover { text-shadow: 0 0 5px #ff0000; }
 /* Split the screen in half */
@@ -62,7 +89,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
     height="87px"
     width="100px" 
     />
-    <a class="navbar-brand" href="/">SIDHARTH CHOUDHARY</a>
+    <a class="navbar-brand" href="/" style="position:absolute; left:120px"><div class="glow">SIDHARTH CHOUDHARY</div></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +97,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto" style="float:right">
+      <ul class="navbar-nav ml-auto" style="float:right; font-size:20px">
 
         <% if (title == "Home") { %>
         <li class="nav-item active">
@@ -78,7 +105,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
         <li class="nav-item">
           <% } %>
 
-          <a class="nav-link" href="/"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/home"><i class="fa fa-lg fa-home"></i> Home <span class="sr-only">(current)</span></a>
         </li>
 
 
@@ -105,7 +132,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/services"><i class="fa fa-lg fa-birthday-cake"></i> Services</a>
+          <a class="nav-link" href="/services"><i class="fa fa-lg fa-cog"></i> Services</a>
         </li>
 
 
@@ -114,7 +141,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/contactme"><i class="fa fa-lg fa-phone"></i> Contact Me</a>
+          <a class="nav-link" href="/contactme"><i class="fa fa-lg fa-phone"></i>  Contact Me</a>
         </li>
 
         <% if (title == "Projects") { %>
@@ -122,7 +149,7 @@ a:hover { text-shadow: 0 0 5px #ff0000; }
           <% } else { %>
         <li class="nav-item">
           <% } %>
-          <a class="nav-link" href="/projects"><i class="fa fa-lg fa-star"></i> Projects</a>
+          <a class="nav-link" href="/projects"><i class="fa fa-lg fa-star"></i>  Projects</a>
         </li>
 
       </ul>

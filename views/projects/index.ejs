@@ -1,8 +1,8 @@
 <% include ../partials/header.ejs %>
  
 <!-- embed my favourite thhings content here -->
-    <div class="container">
-            <h1> Sidharth's <%= title %></h1>
+    <div class="container"><br>
+            <h1 style="font-family:'Billabong'; font-weight:bold"> Sidharth's <%= title %></h1>
         <div class="row">
             <div class="col-md-offset-3 col-md-6"></div>
         
@@ -18,7 +18,7 @@
          
             <tr>
                 <th class="text-centre">
-               <a href = "\MyProjectList" >
+               <a href = "\MyProjectList\<%= projectList[count].name %>">
                 <%= projectList[count].name %>
                 <% var projectName = projectList[count].name; %> 
                 </a>

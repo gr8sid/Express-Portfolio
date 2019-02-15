@@ -1,16 +1,64 @@
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
 <% include ./partials/header.ejs %>
 
 <% if (title == "Projects"){ %>
      
      <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" > 
      <h1 class="display-4">Welcome to Sidharth's <%= title%> page</h1>
       <br>
-<a class="btn btn-primary" href="/projectslist" role="button"> Click To See My Projects</a>
+<a class="btn btn-primary" style="height:50px; width:250px; font-size:20px" href="/projectslist" role="button"> Click To See My Projects</a>
 </div>
   </div>
 <%     }   %>
 
+<% if (title == "Home"){ %>
+<DIV CLASS = "container">
+<div style="float:left; width:60%">
+<p style="color:#fff; border:3px; margin-left:10px; font-family:'Billabong', cursive; font-weight: bold; font-size:20px; background-image: url('assests/images/bg.jpg');">
+
+Hi, welcome to the world of Development Under Sidharth Choudhary!!!
+I’m so thrilled to get this chance to welcome you to the exciting world of COMPUTER PROGRAMMING!
+Anyone can imagine that someone like me who has been programming computers since high school 
+(long before high schools ever taught programming) has seen a lot over the past 5 years. 
+And I like what I see!<br>
+The most important thing is that <b>programming computers is a lot of fun!</b>
+<br>
+It does not matter if you are young or old - you will enjoy learning 
+how to program. You will finally be able to get a computer to do exactly what 
+you want it to do! That's what programming is all about: telling a computer 
+step-by-step exactly what to do next. In a way, you are the author of a program 
+which will be your creation, your own personal set of rules for computer telling 
+the computer exactly what to do next.
+<br>
+<span style="color:black; font-weight: bold; font-family:Billabong, cursive; font-size:25px">Consistent with the mission of Centennial College, Computer Programming, 
+seeks to prepare students to perform competently in the fields of building 
+construction, drafting and design, software development, 
+information technology, engineering - Brings the Best of out of One.
+</span>
+</p>
+</div>
+ <div style="float:right; width:40%">
+            
+            <img 
+                src="assests/images/progHHOM.jpg" 
+                alt="no img found"
+                height="300px"
+                style="border:5px solid black; margin-left:15%"
+                ALIGN="center"
+                width="440px" 
+             />
+    <div class="jumbotron" style="float:left; width:500px; margin-left:40px;">
+      <br>
+<a class="btn btn-primary" style="height:50px; width:180px; font-size:20px" href="/aboutme" role="button"> Read About ME</a>
+<a class="btn btn-primary" style="height:50px; width:180px; font-size:20px" href="/projectslist" role="button"> My Projects</a>
+</div>
+             </div>
 
 
+</div>
+<%     }   %>
 <% include ./partials/footer.ejs %>
