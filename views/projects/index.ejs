@@ -15,12 +15,25 @@
                 <th class="text-centre"> Description </th>
             </tr>
             <% for(let count=0; count < projectList.length; count++) { %>
+         
             <tr>
-                <th class="text-centre"><%= projectList[count].name %></th>
-                <th class="text-centre"><%= projectList[count].description %></th>
+                <th class="text-centre">
+               <a href = "\MyProjectList" >
+                <%= projectList[count].name %>
+                <% var projectName = projectList[count].name; %> 
+                </a>
+                </th>
+                <th class="text-centre">
+                <a href = "\MyProjectList" >
+                <%= projectList[count].description %>
+                </a>
+                </th>
             </tr>
+      
             <% } %>
             </table>
         </div>
     </div>
+     
+
 <% include ../partials/footer.ejs %>

@@ -21,6 +21,7 @@ mongoDB.once('open', ()=> {
 let indexRouter = require('./routes/index');
 let contactRouter = require('./routes/contact');
 let projectRouter = require('./routes/favouriteThings');
+let projectsRouter = require('./routes/projects');
 let app = express();
 
 // view engine setup
@@ -37,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use('/', indexRouter);
 app.use('/contact-list', contactRouter);
 app.use('/project-list', projectRouter);
+app.use('/projectsList', projectsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

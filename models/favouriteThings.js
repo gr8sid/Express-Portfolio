@@ -7,7 +7,7 @@ let favouriteSchema = mongoose.Schema({
 },
 {
    // collection: "favouriteThings"
-   collection: "projects"
+      collection: "projects"
 });
                                                                                         
 module.exports = mongoose.model('sidharth', favouriteSchema);
