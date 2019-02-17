@@ -1,19 +1,30 @@
+<!-- 
+Name: Sidharth Choudhary
+Student ID: 300990285
+Date: 16 Feb, 2019
+-->
+
 <head>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <% include ./partials/header.ejs %>
 
-<% if (title == "Projects"){ %>
+
+<!-- Projects Page is referenced to the Home Template -->
+<% if(title == "Projects"){ %>
      
      <div class="container">
     <div class="jumbotron" > 
-     <h1 class="display-4">Welcome to Sidharth's <%= title%> page</h1>
+     <h1 class="display-4">Welcome to Sidharth's <%= title %> page</h1>
       <br>
 <a class="btn btn-primary" style="height:50px; width:250px; font-size:20px" href="/projectslist" role="button"> Click To See My Projects</a>
 </div>
   </div>
-<%     }   %>
+<%  } %>
+
+
+<!-- Home Page -->
 
 <% if (title == "Home"){ %>
 <DIV CLASS = "container">
@@ -61,5 +72,6 @@ information technology, engineering - Brings the Best of out of One.
 
 
 </div>
-<%     }   %>
+<% } %>
+
 <% include ./partials/footer.ejs %>

@@ -1,6 +1,13 @@
+<!-- 
+Name: Sidharth Choudhary
+Student ID: 300990285
+Date: 16 Feb, 2019
+-->
+
 <% include ../partials/header.ejs %>
  
-<!-- embed my favourite thhings content here -->
+<!-- embed my PROJECT LIST content here -->
+
     <div class="container"><br>
             <h1 style="font-family:'Billabong'; font-weight:bold"> Sidharth's <%= title %></h1>
         <div class="row">
@@ -14,8 +21,11 @@
                 <th class="text-centre"> Name </th>
                 <th class="text-centre"> Description </th>
             </tr>
+
+<!-- Redirecting To MYProjectList with the unique project id's as parameters. -->
+
             <% for(let count=0; count < projectList.length; count++) { %>
-         
+        
             <tr>
                 <th class="text-centre">
                <a href = "\MyProjectList\<%= projectList[count].name %>">
